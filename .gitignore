@@ -1,0 +1,41 @@
+# Clojure
+target/
+.lein-*
+.nrepl-*
+.repl
+.clj-kondo/
+.lsp/
+.cpcache/
+.rebel_readline_history
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Build artifacts
+out/
+classes/
+checkouts/
+pom.xml
+pom.xml.asc
+
+# IDE specific
+.vscode/
+.project
+.classpath
+.settings/

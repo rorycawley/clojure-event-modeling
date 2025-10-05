@@ -1,0 +1,29 @@
+{:tasks
+ {run {:doc "Run the application"
+       :task (clojure "-M -m clojure-event-modeling.core")
+       :override-builtin true}
+
+  test {:doc "Run all tests"
+        :task (clojure "-X:test")}
+
+  lint {:doc "Lint code with clj-kondo"
+        :task (clojure "-M:lint")}
+
+  format {:doc "Format code"
+          :task (clojure "-M:format")}
+
+  format-check {:doc "Check code formatting without modifying files"
+                :task (clojure "-M:format-check")}
+
+  clean {:doc "Remove build artifacts"
+         :task (shell "rm -rf target .cpcache")}
+
+  ci {:doc "Run all CI checks (format, lint, test)"
+      :task (do
+              (println "Checking code formatting...")
+              (run 'format-check)
+              (println "\nLinting code...")
+              (run 'lint)
+              (println "\nRunning tests...")
+              (run 'test)
+              (println "\n✓ All CI checks passed!"))}}}
