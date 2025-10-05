@@ -20,4 +20,10 @@ We can replay the events to get the latest state of the Business Entity, or we c
 
 This provides great audit capabilities.
 
+We can use the events in the event streams to create projections for different use cases. With Event Sourcing we can build projections today for use cases we didn't have in the past with all the data we gather in the events.
+
+An event store has append only event streams, the streams don't change and the events in them don't change. All that we do is add to the event streams.
+
+Event Stores provide efficient access to the event streams (event sequences). We could be accessing all of the events for a customer or for an entity, this could be limited to a certain timeframe.
+
 
