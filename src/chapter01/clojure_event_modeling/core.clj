@@ -1,4 +1,4 @@
-(ns clojure-event-modeling.core)
+(ns chapter01.clojure-event-modeling.core)
 
 (defn greet
   "Returns a greeting message for the given name."

@@ -1,6 +1,6 @@
-(ns clojure-event-modeling.core-test
+(ns chapter01.clojure-event-modeling.core-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure-event-modeling.core :as core]))
+            [chapter01.clojure-event-modeling.core :as core]))
 
 (deftest greet-test
   (testing "greet function"

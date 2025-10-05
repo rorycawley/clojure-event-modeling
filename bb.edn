@@ -1,6 +1,6 @@
 {:tasks
  {run {:doc "Run the application"
-       :task (clojure "-M -m clojure-event-modeling.core")
+       :task (clojure "-M -m chapter01.clojure-event-modeling.core")
        :override-builtin true}
 
   test {:doc "Run all tests"
